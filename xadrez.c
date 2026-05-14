@@ -48,7 +48,7 @@ int main(){
  printf("\n");
  printf("\n");
  //Movimentação do cavalo ultilizando loops aninhados
-   while (c--)
+ while (c--)
  {
     for ( int a = 0;a < 2; a++)
     {
