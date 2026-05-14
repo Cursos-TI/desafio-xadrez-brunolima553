@@ -10,7 +10,7 @@ int main(){
  {
     printf("Torre andou uma casa para direita!\n");
  }
- printf("\n");
+ printf("\n");//espaço
  printf("\n");
 
  //Movimentação do bispo usando "while" 
