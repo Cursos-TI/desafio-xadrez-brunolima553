@@ -9,7 +9,7 @@ void movertorre(int casas){// ultilizando recursividade
    
 }
 
-void moverbispo(int casas){// ultilizando recursividade
+void moverbispo(int casas){// ultilizando recursividade bispo
    if (casas > 0)
    {
     printf("Bispo uma casa p/ direita!\n");
