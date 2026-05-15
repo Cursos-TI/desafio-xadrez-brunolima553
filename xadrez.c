@@ -1,62 +1,80 @@
 #include <stdio.h>
 
+void movertorre(int casas){// ultilizando recursividade
+   if (casas > 0)
+   {
+      printf("Torre uma casa p/ Cima\n");
+      movertorre(casas -1);
+   }
+   
+}
+
+void moverbispo(int casas){// ultilizando recursividade
+   if (casas > 0)
+   {
+    printf("Bispo uma casa p/ direita!\n");
+    moverbispo(casas -1);
+   }
+   
+}
+
+void moverrainha(int casas){// ultilizando recursividade
+   if (casas > 0)
+   {
+      printf("Rainha uma casa p/ Esquerda\n");
+      moverrainha(casas -1);
+   }
+   
+}
+
 int main(){
 
- int t=0,b=0,r=0,c=1; //declarando as variaveis torre T,bispo B ,rainha ,Cavalo C.
+ int c=1; //declarando as variavel para cavalo
 
- //movimentação da torre usando "for"
+ //movimentação da torre usando Recursividade
+ //Torre anda 5 casas para cima
+   movertorre(5);
 
- for ( t = 0; t < 5; t++)
+
+
+ printf("\n");
+ printf("\n");
+
+
+
+ //movimentação da Bispo usando Recursividade e for(repetição)
+ //Bispo anda 5 casas para cima e direita
+ for (int i = 0; i < 5; i++)
  {
-    printf("Torre andou uma casa para direita!\n");
+   printf(" Bispo uma casa p/ cima!\n ");
+   moverbispo(1);
  }
+ 
+
  printf("\n");
  printf("\n");
 
+ //Movimentação da rainha ultilizando recursividade
+ //Rainha anda 8 casas para cima
+ moverrainha(8);
 
-
-
- //Movimentação do bispo usando "while" 
- while (b < 5)
- {
-    printf("Bispo andou p/cima e p/ direita!\n");
-
-
-    b++;
- }
 
  printf("\n");
  printf("\n");
 
 
-
-
-
- //movimentação da rainha usando "do while"
- do
- {
-    
-    printf("Rainha andou p/ esquerda!\n");
-    
-    r++;
- } while (r < 8 );
-
-
-
-
-
- printf("\n");
- printf("\n");
- //Movimentação do cavalo ultilizando loops aninhados
- while (c--)
+ //movimentação do Cavalo usando loops aninhados
+ //Cavalo anda 2 casas p/ cima e uma para direita
+  while (c--)
  {
     for ( int a = 0;a < 2; a++)
     {
-        printf("Cavalo andou uma casa p/ baixo!\n"); //anda duas casas p/ baixo
+        printf("Cavalo  uma casa p/ cima!\n");
     }
-        printf("Cavalo andou uma casa p/ esquerda!\n"); //anda uma casa p/ esquerda
+        printf("Cavalo  uma casa p/ Direita!\n");
     
  }
+
  
 
  
